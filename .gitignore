@@ -1,0 +1,14 @@
+# Vivado build artifacts
+*.jou
+*.log
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.xpr.bak
+*_wrapper.v
+*_wrapper.vhd
+*.backup.*
+.Xil/
+vivado*.backup.*

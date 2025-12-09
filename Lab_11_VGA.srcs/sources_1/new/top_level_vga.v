@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module top_level_vga(
     input clk,
-    input up,      // ADD THESE 4 LINES
+    input up,
     input down,
     input left,
     input right,
@@ -9,8 +9,8 @@ module top_level_vga(
     input down2, 
     input left2, 
     input right2,
-//    input btn_p1_fire,
-//    input btn_p2_fire,
+    input btn_p1_fire,
+    input btn_p2_fire,
     output h_sync,
     output v_sync,
     output [3:0]red,
@@ -28,6 +28,6 @@ module top_level_vga(
     h_counter x2(clk_d, trig_v, h_count);
     v_counter x5(clk_d, trig_v, v_count);
     vga_sync x3(h_count,v_count, h_sync, v_sync, video_on, x_loc, y_loc);
-    pixel_gen x4(clk_d, video_on, x_loc, y_loc, up, down, left, right, up2, down2, left2, right2, red, green, blue);  // ADD the 4 joystick signals here
+    pixel_gen x4(clk_d, video_on, x_loc, y_loc, up, down, left, right, up2, down2, left2, right2, btn_p1_fire, btn_p2_fire, red, green, blue);
     
 endmodule
