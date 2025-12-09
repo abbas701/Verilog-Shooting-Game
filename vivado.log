@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec  9 09:14:29 2025
+# Process ID: 43620
+# Current directory: C:/Users/Dell/Downloads/Parwaaz_mainscreen_VGA working powerups need change/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent46584 C:\Users\Dell\Downloads\Parwaaz_mainscreen_VGA working powerups need change\Parwaaz_mainscreen_VGA\Parwaaz_mainscreen_VGA\Parwaaz_mainscreen_VGA\Lab_11_VGA.xpr
+# Log file: C:/Users/Dell/Downloads/Parwaaz_mainscreen_VGA working powerups need change/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/vivado.log
+# Journal file: C:/Users/Dell/Downloads/Parwaaz_mainscreen_VGA working powerups need change/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dell/Downloads/Parwaaz_mainscreen_VGA working powerups need change/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Dell/Downloads/Parwaaz_mainscreen_VGA working powerups need change/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA'
+INFO: [Project 1-313] Project file moved from 'C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 1026.223 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 09:16:40 2025...

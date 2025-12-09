@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log top_level_vga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_vga.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top_level_vga.tcl -notrace
+Command: synth_design -top top_level_vga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15552
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1031.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level_vga' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/top_level_vga.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/clk_div.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/clk_div.v:2]
+INFO: [Synth 8-6157] synthesizing module 'h_counter' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/h_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'h_counter' (2#1) [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/h_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'v_counter' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/v_counter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'v_counter' (3#1) [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/v_counter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/vga_sync.v:4]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/vga_sync.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:2]
+	Parameter JET_W bound to: 50 - type: integer 
+	Parameter JET_H bound to: 35 - type: integer 
+	Parameter HEALTH_BAR_WIDTH bound to: 120 - type: integer 
+	Parameter HEALTH_BAR_HEIGHT bound to: 20 - type: integer 
+	Parameter HEALTH_BORDER bound to: 2 - type: integer 
+	Parameter MARGIN_FROM_EDGE bound to: 20 - type: integer 
+	Parameter HEALTH_Y bound to: 20 - type: integer 
+	Parameter P1_HEALTH_X bound to: 20 - type: integer 
+	Parameter P2_HEALTH_X bound to: 500 - type: integer 
+	Parameter P1_TEXT_X bound to: 148 - type: integer 
+	Parameter P2_TEXT_X bound to: 472 - type: integer 
+	Parameter TEXT_Y bound to: 26 - type: integer 
+	Parameter TIMER_X bound to: 11'sb00100101001 
+	Parameter TIMER_Y bound to: 11'sb00000001111 
+	Parameter SHIELD_DURATION bound to: 300 - type: integer 
+	Parameter PU_SIZE bound to: 30 - type: integer 
+	Parameter TOTAL_POWERUPS bound to: 10 - type: integer 
+	Parameter PLUS bound to: 2'b00 
+	Parameter MINUS bound to: 2'b01 
+	Parameter SHIELD bound to: 2'b10 
+	Parameter CENTER_X bound to: 320 - type: integer 
+	Parameter CENTER_Y bound to: 240 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:442]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:448]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:470]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:476]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (5#1) [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_vga' (6#1) [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/top_level_vga.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1031.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1031.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1031.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1031.332 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/constrs_1/new/vga.xdc]
+Finished Parsing XDC File [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/constrs_1/new/vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/constrs_1/new/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_vga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1049.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1049.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1049.941 ; gain = 18.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1049.941 ; gain = 18.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1049.941 ; gain = 18.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1049.941 ; gain = 18.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 31    
+	   3 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 9     
+	   2 Input    9 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 2     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 15    
+	  53 Input    4 Bit        Muxes := 1     
+	  61 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 21    
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP pu_dist_sq0, operation Mode is: A*B.
+DSP Report: operator pu_dist_sq0 is absorbed into DSP pu_dist_sq0.
+DSP Report: Generating DSP pu_dist_sq, operation Mode is: C+A*B.
+DSP Report: operator pu_dist_sq is absorbed into DSP pu_dist_sq.
+DSP Report: operator pu_dist_sq0 is absorbed into DSP pu_dist_sq.
+DSP Report: Generating DSP dist_sq0, operation Mode is: A*B.
+DSP Report: operator dist_sq0 is absorbed into DSP dist_sq0.
+DSP Report: Generating DSP dist_sq, operation Mode is: C+A*B.
+DSP Report: operator dist_sq is absorbed into DSP dist_sq.
+DSP Report: operator dist_sq0 is absorbed into DSP dist_sq.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'x4/shield1_active_reg__0/Q' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:286]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:286]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:286]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'x4/shield2_active_reg__0/Q' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:291]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:291]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.srcs/sources_1/new/pixel_gen.v:291]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1076.637 ; gain = 45.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pixel_gen   | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | C+A*B       | 11     | 11     | 21     | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | C+A*B       | 11     | 11     | 21     | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1094.395 ; gain = 63.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1096.055 ; gain = 64.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.922 ; gain = 128.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   168|
+|3     |DSP48E1 |     4|
+|5     |LUT1    |    42|
+|6     |LUT2    |   240|
+|7     |LUT3    |   134|
+|8     |LUT4    |   420|
+|9     |LUT5    |   276|
+|10    |LUT6    |   619|
+|11    |MUXF7   |    10|
+|12    |FDRE    |   225|
+|13    |FDSE    |    15|
+|14    |IBUF    |     9|
+|15    |OBUF    |    14|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1164.789 ; gain = 133.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 6 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1164.789 ; gain = 114.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1164.789 ; gain = 133.457
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1176.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 182 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_level_vga' is not ideal for floorplanning, since the cellview 'pixel_gen' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1176.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 1 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1176.875 ; gain = 145.543
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ai09625/Documents/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Parwaaz_mainscreen_VGA/Lab_11_VGA.runs/synth_1/top_level_vga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_vga_utilization_synth.rpt -pb top_level_vga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 15:36:07 2025...
